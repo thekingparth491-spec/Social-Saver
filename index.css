@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body{margin:0;min-height:100vh;color:#eef0f7;background:#0a0c14;
+  background-image:radial-gradient(60% 40% at 15% 0%,rgba(109,94,252,.28),transparent),radial-gradient(50% 35% at 100% 10%,rgba(62,224,207,.14),transparent)}
+.glass{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.shimmer{background-size:200% 100%;animation:shimmer 1.6s linear infinite}
+@keyframes shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){.shimmer{animation:none}}
